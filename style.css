@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: black;
 }
 canvas {
   display: block;
@@ -9,8 +10,17 @@ canvas {
 
 h1 {
   text-align: center;
+  color: darkred ;
+  font-weight: 1000;
 }
 
 p{
   padding-left: 5%;
+  color:gray ; 
+  font-weight: 600;
+  padding-right: 30%;
+}
+
+a{
+  color:firebrick;
 }

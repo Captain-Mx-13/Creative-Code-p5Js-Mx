@@ -21,14 +21,44 @@ function draw() {
   fill(41, 48, 29);
   rect(230, 50, 110, 310);
 
+  // back windows 
+  fill(48, 51, 47);
+  rect(245, 65, 50, 70);
+  rect(245, 150, 50, 70);
+  rect(245, 235, 50, 70);
+  rect(160, 20, 50, 70);
+  rect(160, 110, 50, 70);
+  rect(160, 200, 50, 70);
+
+  // street lamp
+  stroke(20);
+  strokeWeight(10);
+  line(210, 365, 210, 100)
+  noStroke();
+  fill(255, 211, 80);
+  ellipse(210, 105, 15, 20);
+
+  fill(20);
+  ellipse(210, 100, 30, 20);
+
   //moving car
   fill(10);
   circle(mouseX, height * 0.63, 20);
   circle(mouseX+50, height * 0.63, 20);
 
-  fill(33)
-  rect(mouseX, height * 0.58, 70, 30)
-  rect(mouseX-20, height * 0.605, 20, 15)
+  fill(33);
+  rect(mouseX, height * 0.58, 70, 30);
+  rect(mouseX-20, height * 0.605, 20, 15);
+
+  fill(230, 234, 235)
+  ellipse(mouseX-20, height * 0.61, 4, 8);
+
+  fill(230, 234, 235, 40);
+  triangle(mouseX-20, height * 0.61, mouseX-70, height * 0.56, mouseX-70, height *0.65)
+
+  //light from street lamp
+  fill(255, 211, 80, 50)
+  triangle(210, 105, 180, 380, 240, 380)
 
   // front of close buildings: left, right 
   fill(107, 61, 29);
@@ -49,7 +79,7 @@ function draw() {
   triangle(315, 450, 375, 450, 375, 600);
 
   // window frames for close buildings
-  fill(65, 69, 64)
+  fill(65, 69, 64);
   rect(10, 10, 80, 120);
   rect(10, 170, 80, 120);
   rect(10, 330, 80, 120);
