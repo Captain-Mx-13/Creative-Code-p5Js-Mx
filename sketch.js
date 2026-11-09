@@ -21,6 +21,15 @@ function draw() {
   fill(41, 48, 29);
   rect(230, 50, 110, 310);
 
+  //moving car
+  fill(10);
+  circle(mouseX, height * 0.63, 20);
+  circle(mouseX+50, height * 0.63, 20);
+
+  fill(33)
+  rect(mouseX, height * 0.58, 70, 30)
+  rect(mouseX-20, height * 0.605, 20, 15)
+
   // front of close buildings: left, right 
   fill(107, 61, 29);
   rect(0, 0, width * 0.25, 600);
@@ -39,7 +48,7 @@ function draw() {
   fill(79, 38, 17);
   triangle(315, 450, 375, 450, 375, 600);
 
-  // window frames
+  // window frames for close buildings
   fill(65, 69, 64)
   rect(10, 10, 80, 120);
   rect(10, 170, 80, 120);
