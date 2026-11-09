@@ -52,7 +52,7 @@ function draw() {
 
   fill(230, 234, 235)
   ellipse(mouseX-20, height * 0.61, 4, 8);
-
+  //light from headlight
   fill(230, 234, 235, 40);
   triangle(mouseX-20, height * 0.61, mouseX-70, height * 0.56, mouseX-70, height *0.65)
 
