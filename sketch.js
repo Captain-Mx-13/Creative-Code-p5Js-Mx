@@ -1,5 +1,9 @@
+let canvas
+
 function setup() {
-  createCanvas(500, 600);
+  canvas = createCanvas(500, 600);
+  canvas.parent("sketch-holder");
+  canvas.class("home");
   noStroke();
 }
 
