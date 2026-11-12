@@ -57,6 +57,15 @@ text('Sound Selection', width * 0.5, 60);
 
 fill(80);
 textWeight(500);
-text('1', 165, 180);
-text('2', 165, 280);
+text('1', 165, 182);
+text('2', 165, 275);
+text('3', 165, 370);
+text('4', 165, 465);
+
+fill(0);
+textweight(400);
+text('Electric Guitar Loop', 200, 182);
+text('Electric Bassline', 200, 275);
+text('Electric Piano Loop', 200, 370);
+text('Punchy Drums', 200, 465);
 }
