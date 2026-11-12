@@ -3,15 +3,11 @@ let sound1;
 let sound2;
 let sound3;
 let sound4;
-let font;
 
 async function setup() {
   canvas = createCanvas(800, 600);
   canvas.parent("sketch-holder");
-  font = await
-  loadFont('./assets/stormfont.tff');
-  textFont(font);
-  textSize(20);
+  textSize(40);
   textAlign(CENTER, CENTER)
 
   sound1 = await loadSound('./assets/sound1.wav');
@@ -38,8 +34,6 @@ rect(100, 120, 600, 400);
 fill(0);
 strokeWeight(15);
 line(680, 140, 680, 500);
-fill(200, 222, 219);
-line(680, 150, 680, 250);
 
 // song rectangles
 fill(250, 185, 200);
@@ -65,10 +59,12 @@ square(135, 435, 60);
 
 // text
 fill(0)
+textSize(60);
 textWeight(900);
 text('Sound Selection', width * 0.5, 60);
 
 fill(80);
+textSize(40);
 textWeight(500);
 text('1', 165, 182);
 text('2', 165, 275);
@@ -76,11 +72,12 @@ text('3', 165, 370);
 text('4', 165, 465);
 
 fill(0);
-textweight(400);
-text('Electric Guitar Loop', 200, 182);
-text('Electric Bassline', 200, 275);
-text('Electric Piano Loop', 200, 370);
-text('Punchy Drums', 200, 465);
+textSize(20);
+textWeight(400);
+text('Electric Guitar Loop', 295, 170);
+text('Electric Bassline', 280, 265);
+text('Electric Piano Loop', 293, 360);
+text('Punchy Drums', 273, 450);
 }
 
 //play sounds with key presses
