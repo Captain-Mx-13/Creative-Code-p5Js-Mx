@@ -1,10 +1,23 @@
-let canvas 
+let canvas
+let sound1;
+let sound2;
+let sound3;
+let sound4;
+let font;
 
-function setup() {
+async function setup() {
   canvas = createCanvas(800, 600);
   canvas.parent("sketch-holder");
-  textSize(40);
+  font = await
+  loadFont('./assets/stormfont.tff');
+  textFont(font);
+  textSize(20);
   textAlign(CENTER, CENTER)
+
+  sound1 = await loadSound('./assets/sound1.wav');
+  sound2 = await loadSound('./assets/sound2.wav');
+  sound3 = await loadSound('./assets/sound3.wav');
+  sound4 = await loadSound('./assets/sound4.wav');
 }
 
 function draw() {
@@ -68,4 +81,43 @@ text('Electric Guitar Loop', 200, 182);
 text('Electric Bassline', 200, 275);
 text('Electric Piano Loop', 200, 370);
 text('Punchy Drums', 200, 465);
+}
+
+//play sounds with key presses
+function keyPressed() {
+  if (key === '1') {
+     if(sound1.isPlaying()) {
+      sound1.stop();
+     }
+    else {
+      sound1.start();
+     }
+  }
+
+  if (key === '2') {
+     if(sound2.isPlaying()) {
+      sound2.stop();
+     }
+    else {
+      sound2.start();
+     }
+  }
+
+  if (key === '3') {
+     if(sound3.isPlaying()) {
+      sound3.stop();
+     }
+    else {
+      sound3.start();
+     }
+  }
+
+  if (key === '4') {
+     if(sound4.isPlaying()) {
+      sound4.stop();
+     }
+    else {
+      sound4.start();
+     }
+  }
 }
